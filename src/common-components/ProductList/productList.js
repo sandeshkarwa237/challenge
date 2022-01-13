@@ -12,11 +12,17 @@ const ProductList = ({
     <div className="block relative h-48 rounded overflow-hidden border border-gray-300">
       <Badge isSale={isSale} />
       <Badge isExclusive={isExclusive} />
+      {/* Added this dummy images for now to view the actual look and feel  */}
       <img
+        src={`https://placeimg.com/640/480/${productName}`}
+        alt={productName}
+      />
+      {/* Once we receive the images from API we can comment above img tag and use below one */}
+      {/* <img
         alt={productName}
         className="object-cover object-center w-full h-full block"
         src={productImage}
-      />
+      /> */}
     </div>
     <div className="mt-4">
       <h2 className="text-gray-900 title-font text-lg font-medium">

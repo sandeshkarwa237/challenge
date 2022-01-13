@@ -7,7 +7,7 @@ const Badge = ({ isSale, isExclusive }) => {
       return (
         <BadgeType
           isSale={isSale}
-          className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-red-100 rounded"
+          className="inline-flex absolute items-center justify-center px-2 py-1 text-xs font-bold text-red-100 rounded"
         >
           Sale
         </BadgeType>
@@ -17,7 +17,7 @@ const Badge = ({ isSale, isExclusive }) => {
       return (
         <BadgeType
           isExclusive={isExclusive}
-          className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold text-red-100 rounded"
+          className="inline-flex absolute items-center justify-center px-2 py-1 text-xs font-bold text-red-100 rounded"
         >
           Exclusive
         </BadgeType>
